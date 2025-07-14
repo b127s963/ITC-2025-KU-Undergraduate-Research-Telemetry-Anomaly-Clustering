@@ -41,7 +41,4 @@ def graph_segments_in_cluster(k_predicted, cluster, test_csv=r"seperate_dfs\X_an
             segment.visual()
             print(segment_ids, cluster_ids)
             graph_count += 1
-segment = Segment("segments.csv", 1639)
-segment.visual()
-plt.show()
 

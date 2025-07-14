@@ -35,9 +35,4 @@ def k_means(n_clusters, ddf):
     model.fit_predict(ddf.X2_anomalies_train)
     k_predicted = model.predict(ddf.X2_anomalies_test)
     k_means_silhouette_score = visualize_clusters(ddf, k_predicted, n_clusters)
-    
-    if n_clusters ==4:
-        for i in range(4):
-            gsic(k_predicted, i)
-    
     return k_means_silhouette_score
